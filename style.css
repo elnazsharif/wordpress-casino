@@ -1,0 +1,398 @@
+body {
+  background-color: #eee;
+  font: 1em sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #fff;
+  padding: 50px 100px;
+  font-size: 38px;
+  margin: 0;
+}
+
+#primary {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+#main {
+  margin: 20px;
+}
+
+.content-box {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.content-box a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.content-area a:hover {
+  text-decoration: underline;
+}
+
+.site-main {
+  font-family: Arial, sans-serif;
+}
+
+.site-main img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.comments-box {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.comments-box a {
+  color: #337ab7;
+}
+
+.address {
+  background-color: red;
+  border-radius: 30px;
+  padding: 10px 40px;
+  width: 250px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column1 {
+  flex: 1;
+  text-align: center;
+}
+
+.column2 {
+  flex: 2;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  background: url('http://localhost/wordpress/wp-content/themes/casino/Online_Casino.jpg') no-repeat center center;
+  background-size: cover;
+  align-items: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  margin: 60px 20px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.hero-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+}
+
+/*  MENU */
+#collapseNav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  #collapseNav {
+    flex-direction: row;
+  }
+}
+
+#collapseNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#collapseNav li {
+  margin-right: 10px;
+}
+
+#collapseNav li a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  background: #333;
+}
+
+#collapseNav li a:hover {
+  background: red;
+}
+
+@media only screen and (max-width: 767px) {
+  #collapseNav ul {
+    flex-direction: column;
+  }
+
+  #collapseNav li {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.dynamic-date {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Style for the target section */
+
+.scroll-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#target-section {
+  padding: 100px 50px;
+}
+
+/* Style for progress bar */
+
+
+.progress-bar {
+  width: 100px;
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: attr(data-score);
+  display: block;
+  height: 100%;
+  background-color: #8a2222;
+  width: 0;
+  transition: width 1s;
+}
+
+.progress-bar[data-score="1"]::after {
+  width: 10%;
+}
+
+.progress-bar[data-score="2"]::after {
+  width: 20%;
+}
+
+.progress-bar[data-score="3"]::after {
+  width: 30%;
+}
+
+.progress-bar[data-score="4"]::after {
+  width: 40%;
+}
+
+.progress-bar[data-score="5"]::after {
+  width: 50%;
+}
+
+.progress-bar[data-score="6"]::after {
+  width: 60%;
+}
+
+.progress-bar[data-score="7"]::after {
+  width: 70%;
+}
+
+.progress-bar[data-score="8"]::after {
+  width: 80%;
+}
+
+.progress-bar[data-score="9"]::after {
+  width: 90%;
+}
+
+.progress-bar[data-score="10"]::after {
+  width: 100%;
+}
+
+/* Style for star ratig */
+
+
+.star-rating {
+  display: flex;
+}
+
+.star-rating svg {
+  width: 18px;
+  height: 18px;
+  color: #ff9900;
+}
+
+.star-rating svg:not(:last-child) {
+  margin-right: 3px;
+}
+
+/* Style for table */
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 30px;
+  background-color: #f2f2f2;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: attr(data-score);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  color: white;
+  width: 0;
+  transition: width 1s;
+}
+
+.star-rating {
+  display: inline-block;
+}
+
+.star-rating svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffc107;
+}
+
+@media (max-width: 768px) {
+  /* Styles for tablet screens and below */
+  table {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  th,
+  td {
+    flex-basis: 50%;
+  }
+
+  th {
+    flex-basis: 100%;
+  }
+
+  .progress-bar,
+  .star-rating {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile screens */
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  .progress-bar {
+    width: 80px;
+    height: 20px;
+  }
+
+  .progress-bar::after {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .star-rating svg {
+    width: 12px;
+    height: 12px;
+  }
+}
